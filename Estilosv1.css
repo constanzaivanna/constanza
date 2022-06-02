@@ -1,0 +1,293 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@font-face {
+	font-family: "Britannic Bold";
+	src:url("Fonts/BRITANIC.TTF");
+}
+
+@font-face {
+	font-family: "DelaGothic";
+	src:url("Fonts/DelaGothicOne-Regular.ttf");
+}
+
+@font-face{
+	font-family:"ebrima";
+	src: url("Fonts/ebrima.ttf");
+} 
+
+@font-face{
+	font-family:"Ebrima Bold";
+	src:url("Fonts/ebrimabd.ttf");
+}
+
+
+* {
+	margin: 0px;
+	padding:0px;
+}
+
+body {
+	font-family: "Ebrima";
+	
+}
+
+header {
+	width: 100%;
+	height: 400px;	
+	margin-left: 30px;
+	font-family: "DelaGothic";
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	
+}
+
+
+
+.nombre {
+	width:38%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+h1{
+	font-size: 2em;
+	color:darkviolet;;
+	padding-bottom: 10px;
+		
+}
+
+h2 {
+	font-size: 1em;
+	text-transform: uppercase;
+	
+}
+
+header ul li{
+	font-size: 1em;
+	font-family:"Ebrima Bold";
+	list-style: none;
+	align-self:flex-start;
+}
+.cajadatospersonales{
+	margin-top:10px;
+	align-self:flex-start;
+}
+
+nav {
+	width:100%;
+	hight:45px;
+	background-color: #D89AE1;
+	padding:15px 0px;
+	
+}
+
+nav ul{
+	margin-bottom:20px;
+	padding-left:40px;
+}
+
+nav ul li {
+	font-size:1.2em;
+	margin:0px 50px;
+	display: inline;
+	padding:15px 0px 15px 80px;
+	
+}
+
+nav a {
+	font-family: "Britannic Bold";
+	text-decoration: none;
+	color:darkviolet;
+}
+
+
+
+main{
+	width:100%;
+	height:100px;
+	padding:40px 0px;
+	background-color:#FCD38F;
+	
+}
+
+
+
+
+.descripcionpersonal {
+	height: 100px;
+	margin:10px 0px 0px ;
+	padding:0px 300px 30px 320px;
+	font-family: "Ebrima bold";
+	color:darkviolet;
+}
+
+
+article{
+	width:100%;
+	height:200px;
+	font-family:"ebrima";
+}
+
+article div{
+	padding: 20px 0px 0px 170px;
+}
+
+h3 {
+	height: 20px;
+	background-color:#D89AE1;
+	font-size:1.2em;
+	font-family:"britannic Bold";
+	padding: 10px 0px 10px 50px;
+	display:flex;
+	flex-direction:column;
+	
+}
+
+.informacion{
+	height: 500px;
+	padding-top:30px;
+	display:flex;
+}
+
+
+article ul {
+	list-style: none;
+	padding:10px 0px;
+	
+}
+
+.primercolumnaangosta{
+		width:35%;
+		margin-right:20px;
+	}
+
+.primercolumna{
+	width:35%;
+	margin-right:28px;
+}
+
+#textoextenso{
+	width:100%;
+	
+}
+
+
+
+@media screen and (max-width: 600px){
+
+
+
+header {
+	width: 75%;
+	height: 400px;
+	margin-left: 90px;	
+		
+}
+
+
+.nombre{
+	width:75%;
+	
+}
+
+h1{
+	font-size: 1.4em;
+			
+}
+
+h2 {
+	text-transform: uppercase;
+	font-size:0.75em;
+}
+
+
+nav {
+	height:160px;
+	
+}
+
+	
+nav ul {
+		padding:0px;
+	}
+	
+	
+nav ul li {
+	font-size:1em;
+	display:flex;
+	flex-direction:column;
+	align-items:center;	
+	padding:15px 10px;
+	
+	
+}
+
+
+main{
+	height:100px;
+	padding:30px;
+		
+}
+
+
+
+
+.descripcionpersonal {
+	padding:10px 0px;
+	
+}
+
+article{
+	width:100%;
+	height:250px;
+	
+	
+}
+
+article div{
+	padding: 20px 0px 0px 10px;
+}	
+	
+h3 {
+	height: 15px;
+	font-size:0.95em;
+	padding: 10px 0px 10px 50px;
+	
+
+}
+	
+
+article ul {
+	list-style: none;
+	padding:10 20px 0px 10px;
+	
+}
+
+.primercolumnaangosta{
+	width:35%;
+	height:60px;
+	margin-right:40px;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	}
+	
+.primercolumna{
+	width:35%;
+	padding:0px 5px 0px 10px;
+}
+
+	article div ul{
+		padding:0px 5px 0px 20px;
+	}	
+		
+	
+#textoextenso{
+	width:65%;
+}
+
+}
