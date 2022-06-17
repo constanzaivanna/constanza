@@ -4,19 +4,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Curriculum Vitae Constanza Gandolfo</title>
-<link href="Estilosv1.css" rel="stylesheet" type="text/css">
+<link href="estilos.css" rel="stylesheet" type="text/css">
+
+
 </head>
 
-<body>
+	<body>
 	<header>
 		<div class="nombre">
 			<h1>Constanza Gandolfo</h1>
 			<h2>diseño y comunicacion visual</h2>
 			<div class="cajadatospersonales">
 				<ul>
-    				<li>10/10/95</li>
-					<li>cogandolfo@gmail.com</li>
-					<li>DNI: 39.276.693</li>
+    				<li>10/10/1995</li>
+					
+					<li>Buenos Aires, Argentina</li>
 					<li>cogandolfo@gmail.com</li>				
 	  			</ul>
 			</div>	
@@ -29,6 +31,8 @@
 			<li><a href="#idiomas">Idiomas</a></li>
 			<li><a href="#conocimientos">Conocimientos</a></li>		
 			<li><a href="#experiencia">Experiencia</a></li>
+			<li><a href="galeriaprincipal.html">Galería de fotos</a></li>
+			<li><a href="#formulario">Contactame</a></li>
 		</ul>
 	</nav>	
 	<main>
@@ -99,6 +103,35 @@
 				</div>	
 			</article>
 		</section>
+		<secion>
+			<article id="formulario">
+				<h4>Contactame</h4>
+				<p>*Campos obligatorios</p>
+				<form method="post" action="mailto:cogandolfo@gmail.com?subject=Mensaje" target="_blank" enctype="text/plain">
+					<div id="contenedordecolumnas">
+						<div class="columnasformulario">
+							<label for="nombre">*Nombre y apellido</label>
+							<input type="text" name="nombre" id="nombreformulario" placeholder="Nombre y apellido" required>
+
+							<label for="email" >*E-Mail:</label>
+							<input type="email" name="email" id="email" required>
+
+							<p>Soy de:</p>
+							<label for="soyde"><input type="radio" name="soyde" value="argentina" id="argentina">Argentina</label>
+							<label><input type="radio" name="soyde" value="otropais" id="otropais">Otro país</label>
+						</div>
+						<div class="columnasformulario">
+							<label>Mensaje</label>
+							<textarea name="mensaje" id="mensaje"></textarea>
+						</div>
+					</div>
+					<div class="botonesform">
+						<input type="reset" value="Restaurar" class="restaurar">
+						<input type="submit" value="Enviar mensaje" formenctype="text/plain" class="enviar">
+					</div>
+				</form>
+			</article>
+		</secion>
 	</main>
 </body>
 </html>

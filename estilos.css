@@ -1,0 +1,416 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@font-face {
+	font-family: "Britannic Bold";
+	src:url("Fonts/BRITANIC.TTF");
+}
+
+@font-face {
+	font-family: "DelaGothic";
+	src:url("Fonts/DelaGothicOne-Regular.ttf");
+}
+
+@font-face{
+	font-family:"ebrima";
+	src: url("Fonts/ebrima.ttf");
+} 
+
+@font-face{
+	font-family:"Ebrima Bold";
+	src:url("Fonts/ebrimabd.ttf");
+}
+
+
+* {
+	margin: 0px;
+	padding:0px;
+}
+
+body {
+	font-family: "Ebrima";
+	
+}
+
+header {
+	width: 100%;
+	height: 400px;	
+	margin-left: 30px;
+	font-family: "DelaGothic";
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	
+}
+
+.nombre {
+	width:38%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+h1{
+	font-size: 2em;
+	color:darkviolet;;
+	padding-bottom: 10px;
+		
+}
+
+h2 {
+	font-size: 1em;
+	text-transform: uppercase;
+	
+}
+
+header ul li{
+	font-size: 1em;
+	font-family:"Ebrima Bold";
+	list-style: none;
+	align-self:flex-start;
+}
+.cajadatospersonales{
+	margin-top:10px;
+	align-self:flex-start;
+}
+
+nav {
+	width:100%;
+	background-color: #D89AE1;	
+}
+
+nav ul{
+	
+	padding-left:40px;
+}
+
+nav ul li {
+	font-size:1.2em;
+	margin:0px 50px;
+	display: inline;
+	padding: 0px;
+}
+
+nav a {
+	font-family: "Britannic Bold";
+	text-decoration: none;
+	color:darkviolet;
+}
+
+nav ul li a:hover{
+	color:#FFFFFF;
+	font-size: 1.2em;
+	
+}
+
+
+main{
+	width:100%;
+	height:auto;
+	padding:40px 0px;	
+}
+
+
+
+
+
+.descripcionpersonal {
+	height: auto;
+	margin:10px 0px 0px ;
+	padding:0px 300px 30px 320px;
+	font-family: "Ebrima bold";
+	color:darkviolet;
+}
+
+
+article{
+	width:100%;
+	height:auto;
+	font-family:"ebrima";
+}
+
+
+h3 {
+	background-color:#D89AE1;
+	font-size:1.2em;
+	font-family:"britannic Bold";
+	padding: 10px 0px 10px 50px;
+	display:flex;
+	flex-direction:column;
+	
+}
+
+.informacion{
+	padding: 20px 0px 20px 170px;
+	display:flex;
+}
+
+
+article ul {
+	list-style: none;	
+}
+
+article ul li{
+	padding: 10px;
+}
+
+.primercolumnaangosta{
+	
+		width:35%;
+}
+
+.primercolumna{
+
+	width:35%;
+}
+
+#textoextenso{
+	width:auto;
+	height: auto;
+}
+
+
+/* formulario*/
+
+#formulario{
+	width: 100%;
+	padding:30px 0px 0px 170px;
+	
+}
+
+h4{
+	font-family: "britannic Bold";
+	color:#5B0766;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	margin: 10px;
+}
+
+form{
+	width: 50%;
+	height: auto;
+	display:flex;
+	flex-direction: column;
+}
+
+#contenedordecolumnas{
+	display: flex;
+	justify-content: space-around;
+	
+}
+
+.columnasformulario{
+	margin:10px;
+}
+
+p{
+	font-family: "Ebrima Bold";
+}
+
+label{
+	display:block;
+	height: 25px;
+	
+
+}
+
+input{
+	height:25px;
+	border:none;
+	font-size: 1em;
+	background-color:#D89AE1;
+	margin-bottom:15px;
+	padding:3px;	
+	font-color:#C4C3C3;
+}
+
+input[type=radio]{
+	width: auto;
+	height: auto;
+}
+
+input[type=submit], input[type=reset]{
+	height: 30px;
+	width: 160px;
+	margin:0px 0px 0px 10px;
+	color: #FFFFFF ;
+	font-size:1em;
+	
+}
+
+.botonesform{
+	align-self: flex-end;
+	
+}
+
+.restaurar:hover{
+	background-color: #FFFFFF;
+	border: 1px solid #D89AE1;
+	box-shadow:  0px 4px 4px #D89AE1;
+	color:#5B0766;
+	font-family:"Ebrima Bold"
+}
+
+.enviar:hover{
+	background-color: #5B0766;
+	color:#FFFFFF;
+	box-shadow:  0px 4px 4px #D89AE1;
+	font-family:"Ebrima Bold";
+}
+
+textarea{
+	border: 1px solid #949292;
+	width:150%;
+	height:200px;
+}
+
+/* HTMAL Galerias*/
+
+.headergalerias{
+	height: auto;
+	font-size:1em;
+	margin:30px;
+}
+
+.PortadasGaleria{
+	display:flex;
+	justify-content: center;
+	align-content: center;	
+	animation: subir 1s linear;
+}
+
+.PortadasGaleria div{
+	margin: 20px;
+	 
+}
+#galeriadeimagenes{
+	height:1080px;
+	background-color:white;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	
+}
+
+@keyframes subir{
+	from{ 
+	transform:translate(-1200px);
+		}
+	to{
+		transform: translate(0px);
+	}
+}
+
+@media screen and (max-width: 600px){
+
+header {
+	width: 75%;
+	height: 400px;
+	margin-left: 90px;	
+		
+}
+
+
+.nombre{
+	width:75%;
+	
+}
+
+h1{
+	font-size: 1.4em;
+			
+}
+
+h2 {
+	text-transform: uppercase;
+	font-size:0.75em;
+}
+
+
+nav {
+	height:160px;
+	
+}
+
+	
+nav ul {
+		padding:0px;
+	}
+	
+	
+nav ul li {
+	font-size:1em;
+	display:flex;
+	flex-direction:column;
+	align-items:center;	
+	padding:15px 10px;
+	
+	
+}
+
+
+main{
+	height:100px;
+	padding:30px;
+		
+}
+
+
+
+
+.descripcionpersonal {
+	padding:10px 0px;
+	
+}
+
+article{
+	width:100%;
+	height:250px;
+	
+	
+}
+
+article div{
+	padding: 20px 0px 0px 10px;
+}	
+	
+h3 {
+	height: 15px;
+	font-size:0.95em;
+	padding: 10px 0px 10px 50px;
+	
+
+}
+	
+
+article ul {
+	list-style: none;
+	padding:10 20px 0px 10px;
+	
+}
+
+.primercolumnaangosta{
+	width:35%;
+	height:60px;
+	margin-right:40px;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	}
+	
+.primercolumna{
+	width:35%;
+	padding:0px 5px 0px 10px;
+}
+
+	article div ul{
+		padding:0px 5px 0px 20px;
+	}	
+		
+	
+#textoextenso{
+	width:65%;
+}
+
+}
